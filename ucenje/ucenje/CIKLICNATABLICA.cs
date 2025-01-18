@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ucenje
+﻿namespace ucenje
 {
     internal class CIKLICNATABLICA
     {
@@ -15,10 +9,10 @@ namespace ucenje
         {
              // unos dizmenije tablice
             
-                int rows, cols;
+                int redovi, kolone;
             Console.Write("Unesite broj redova (2-50): ");
 
-            while (int.TryParse(Console.ReadLine(), out rows) || rows < 2 || rows > 50) 
+            while (int.TryParse(Console.ReadLine(), out redovi) || redovi < 2 || redovi > 50) 
             {
                 Console.WriteLine("Neispravan unos. Unesitze broj redova (2-50): ");
             
@@ -26,7 +20,7 @@ namespace ucenje
 
             Console.Write("Unesite broj kolona (2-50): ");
 
-            while (int.TryParse(Console.ReadLine(), out cols) || cols < 50) 
+            while (int.TryParse(Console.ReadLine(), out kolone) || kolone < 50) 
             {
                 Console.Write("Neispravan unos. Unesite broj kolona (2-50): ");
             }
@@ -58,11 +52,11 @@ namespace ucenje
 
             //generiranje matrice u odabranome smjeru
 
-            int[,] matrix = new int[rows, cols];
-            GeneriranjeMartix(martix, rows, cols, direction);
+            int[,] matrix = new int[redovi, kolone];
+            GeneriranjeMartix(martix, redovi, kolone, direction);
 
             //ispis matrice
-            Printmatrix(matrix, rows, cols);
+            Printmatrix(matrix, redovi , kolone );
 
             //pitanje za ponovni unos
             Console.Write("Želite li napraviti još jednu matricu? (DA/NE): ");
@@ -74,34 +68,34 @@ namespace ucenje
 
         }
 
-        private static void Printmatrix(int[,] matrix, int rows, int cols)
+        private static void Printmatrix(int[,] matrix, int redovi, int kolone)
         {
             throw new NotImplementedException();
         }
 
-        private static void GeneriranjeMartix(object martix, int rows, int cols, int direction)
+        private static void GeneriranjeMartix(object martix, int redovi, int kolone, int smjer)
         {
             throw new NotImplementedException();
         }
 
-        public static void GeneriranjeMatrix(int[,] matrix, int rows, int cols, int direction) 
+        public static void GeneriranjeMatrix(int[,] matrix, int redovi, int kolone, int smjer) 
         {
             int num = 1;
             int r = 0, C = 0;
 
             //smjer 1- dolje desno početak u smjeru kazaljke na satu
-            if (direction == 1) 
+            if (smjer == 1) 
             {
-                while (num <= rows * cols)
+                while (num <= redovi * kolone)
                 {
-                    if (r >= 0 && r < rows && C >= 0 && C < cols && matrix[r, c] == 0)
+                    if (r >= 0 && r < redovi && C >= 0 && C < kolone && matrix[r, c] == 0)
                     {
                         matrix[r, c] = num++;
                     }
 
                     //provjetra smejra dolje-desno
 
-                    if (r + 1 < rows && c + 1 < cols && matrix[r + 1, c + 1] == 0)
+                    if (r + 1 < redovi && c + 1 < kolone && matrix[r + 1, c + 1] == 0)
                     {
                         r++;
                         C++;
@@ -109,12 +103,12 @@ namespace ucenje
                     else 
                     {
                         // ako ne mozemo dalje pomaknemo se u desno ili dolje
-                        if (c + 1 < cols && matrix[r, c + 1] == 0)
+                        if (c + 1 < kolone && matrix[r, c + 1] == 0)
                         {
                             c++;
                         }
 
-                        else if (r + 1 < rows && matrix[r + 1, c] == 0)
+                        else if (r + 1 < redovi && matrix[r + 1, c] == 0)
                         {
                             r++;
                         }
