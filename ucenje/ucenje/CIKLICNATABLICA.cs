@@ -1,9 +1,13 @@
-﻿namespace ucenje
+﻿using System.ComponentModel.Design;
+
+namespace ucenje
 {
     internal class CIKLICNATABLICA
     {
         private static object martix;
         private static int c;
+        private static int broj;
+        private static object matrica;
 
         public static void Izvedi() 
         {
@@ -116,9 +120,55 @@
                         {
                         break;
                         }
+
+                        if (smjer == 2) 
+                        {
+                        while (broj <= redovi * kolone) 
+                            {
+                                if (r >= 0 && r < redovi && c >= 0 && c < kolone && matrix[r, c] == 0)
+                                {
+                                    matrix[r, c] = broj++;
+                                }
+                                // provjera smjera dolje lijevo
+                                if (r + 1 < redovi && c - 1 >= 0 && matrix[r + 1, c - 1] == 0)
+                                {
+                                    r++;
+                                    c--;
+
+                                }
+                                else 
+                                {
+                                    // ako ne mozemo dalje pomaknemo se u lijevo ili dolje
+                                    if (c - 1 >= 0 && matrix[r, c - 1] == 0) 
+                                    {
+
+                                        c--;
+                                    }
+                                    else  if (r + 1 < redovi && matrix[r + 1,c] == 0) 
+                                    {
+                                        r++;
+                                    }
+                                    else 
+                                    {
+
+                                        break;
+                                    
+                                    }
+                                    
+                                
+                                }
+                            }
+                        }
+                        
+
+                     
                     }
                 }
+
+               
             }
+
         }
+         
     }
 }
