@@ -9,6 +9,7 @@ namespace ucenje
     internal class CIKLICNATABLICA
     {
         private static object martix;
+        private static int c;
 
         public static void Izvedi() 
         {
@@ -87,6 +88,43 @@ namespace ucenje
         {
             int num = 1;
             int r = 0, C = 0;
+
+            //smjer 1- dolje desno početak u smjeru kazaljke na satu
+            if (direction == 1) 
+            {
+                while (num <= rows * cols)
+                {
+                    if (r >= 0 && r < rows && C >= 0 && C < cols && matrix[r, c] == 0)
+                    {
+                        matrix[r, c] = num++;
+                    }
+
+                    //provjetra smejra dolje-desno
+
+                    if (r + 1 < rows && c + 1 < cols && matrix[r + 1, c + 1] == 0)
+                    {
+                        r++;
+                        C++;
+                    }
+                    else 
+                    {
+                        // ako ne mozemo dalje pomaknemo se u desno ili dolje
+                        if (c + 1 < cols && matrix[r, c + 1] == 0)
+                        {
+                            c++;
+                        }
+
+                        else if (r + 1 < rows && matrix[r + 1, c] == 0)
+                        {
+                            r++;
+                        }
+                        else 
+                        {
+                        break;
+                        }
+                    }
+                }
+            }
         }
     }
 }
