@@ -43,9 +43,9 @@
             Console.WriteLine("15. Sredina gore u kontra smjeru kazaljke na satu");
             Console.WriteLine("16. Sredina dolje u kontra smjeru kazaljke na satu");
 
-            int direction;
+            int smjer;
             Console.Write("Unesite broj smejra: ");
-            while(int.TryParse(Console.ReadLine(),out direction) || direction < 1 || direction >16) 
+            while(int.TryParse(Console.ReadLine(),out smjer) || smjer < 1 || smjer >16) 
             {
                 Console.Write("Neispravan unos. Unesite broj smjera: ");
             }
@@ -53,7 +53,7 @@
             //generiranje matrice u odabranome smjeru
 
             int[,] matrix = new int[redovi, kolone];
-            GeneriranjeMartix(martix, redovi, kolone, direction);
+            GeneriranjeMartix(martix, redovi, kolone, smjer);
 
             //ispis matrice
             Printmatrix(matrix, redovi , kolone );
