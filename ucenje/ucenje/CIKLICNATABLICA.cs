@@ -120,7 +120,7 @@ namespace ucenje
                         {
                         break;
                         }
-
+                        // smjer 2 dolje lijevo početak u smjeru kazaljke na satu
                         if (smjer == 2) 
                         {
                         while (broj <= redovi * kolone) 
