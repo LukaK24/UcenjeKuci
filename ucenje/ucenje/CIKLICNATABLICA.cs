@@ -52,8 +52,8 @@ namespace ucenje
 
                 // Inicijalizacija matrice
                 int[,] matrix = new int[redovi, kolone];
-                int num = 1;  // Početni broj
-                int r = 0, c = 0;  // Početne pozicije
+                int num = 1;  
+                int r = 0, c = 0;  
 
                 // Popunjava matrica prema odabranom smjeru
                 switch (smjer)
@@ -114,12 +114,13 @@ namespace ucenje
                     for (int j = 0; j < kolone; j++)
                     {
                         matrix[r, c] = num++;
+                        
                         // Pomicanje na sljedeću poziciju ovisno o smjeru
                         if (smjer == 1 || smjer == 5) { r++; c++; }
                         else if (smjer == 2 || smjer == 6) { r++; c--; }
                         else if (smjer == 3 || smjer == 7) { r--; c--; }
                         else if (smjer == 4 || smjer == 8) { r--; c++; }
-                        // Slobodno dodajte dodatnu logiku za sve smjerove.
+                        
                     }
                 }
 
@@ -128,7 +129,7 @@ namespace ucenje
                 {
                     for (int j = 0; j < kolone; j++)
                     {
-                        Console.Write($"{matrix[i, j],5} ");  // Formatiraj brojeve s 5 mjesta za poravnanje
+                        Console.Write($"{matrix[i, j],5} ");  
                     }
                     Console.WriteLine();
                 }
