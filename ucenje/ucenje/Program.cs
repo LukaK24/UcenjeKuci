@@ -1,7 +1,11 @@
 ﻿
 using ucenje;
 
-Kalkulator.Izvedi();
+
+GeneratorLozinke.Izvedi();
+//CIKLICNATABLICA.Izvedi();
+
+//Kalkulator.Izvedi();
 
 //SortiranjeNiza.Izvedi();
 
