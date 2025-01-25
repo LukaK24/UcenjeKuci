@@ -1,13 +1,7 @@
 ﻿
 using ucenje;
 
-
-GeneratorLozinke.Izvedi();
-//CIKLICNATABLICA.Izvedi();
-
-//Kalkulator.Izvedi();
-
-//SortiranjeNiza.Izvedi();
+LJubavniKalkulator.Izvedi();
 
 //Pretvorbatemperature.Izvedi();
 

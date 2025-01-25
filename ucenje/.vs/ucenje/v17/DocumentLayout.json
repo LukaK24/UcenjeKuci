@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\korda\\Documents\\GitHub\\UcenjeKuci\\ucenje\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EC0DF4E4-97CB-470E-AA1B-AA2B29EE7A09}|ucenje\\ucenje.csproj|c:\\users\\korda\\documents\\github\\ucenjekuci\\ucenje\\ucenje\\generatorlozinke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EC0DF4E4-97CB-470E-AA1B-AA2B29EE7A09}|ucenje\\ucenje.csproj|solutionrelative:ucenje\\generatorlozinke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EC0DF4E4-97CB-470E-AA1B-AA2B29EE7A09}|ucenje\\ucenje.csproj|c:\\users\\korda\\documents\\github\\ucenjekuci\\ucenje\\ucenje\\ljubavnikalkulator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC0DF4E4-97CB-470E-AA1B-AA2B29EE7A09}|ucenje\\ucenje.csproj|solutionrelative:ucenje\\ljubavnikalkulator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EC0DF4E4-97CB-470E-AA1B-AA2B29EE7A09}|ucenje\\ucenje.csproj|c:\\users\\korda\\documents\\github\\ucenjekuci\\ucenje\\ucenje\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,14 +23,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "GeneratorLozinke.cs",
-              "DocumentMoniker": "C:\\Users\\korda\\Documents\\GitHub\\UcenjeKuci\\ucenje\\ucenje\\GeneratorLozinke.cs",
-              "RelativeDocumentMoniker": "ucenje\\GeneratorLozinke.cs",
-              "ToolTip": "C:\\Users\\korda\\Documents\\GitHub\\UcenjeKuci\\ucenje\\ucenje\\GeneratorLozinke.cs",
-              "RelativeToolTip": "ucenje\\GeneratorLozinke.cs",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAowJYAAAAEAAAAAAAAAA==",
+              "Title": "LJubavniKalkulator.cs",
+              "DocumentMoniker": "C:\\Users\\korda\\Documents\\GitHub\\UcenjeKuci\\ucenje\\ucenje\\LJubavniKalkulator.cs",
+              "RelativeDocumentMoniker": "ucenje\\LJubavniKalkulator.cs",
+              "ToolTip": "C:\\Users\\korda\\Documents\\GitHub\\UcenjeKuci\\ucenje\\ucenje\\LJubavniKalkulator.cs",
+              "RelativeToolTip": "ucenje\\LJubavniKalkulator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFAAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-21T18:59:29.392Z",
+              "WhenOpened": "2025-01-25T18:10:35.846Z",
               "EditorCaption": ""
             },
             {
@@ -41,13 +41,10 @@
               "RelativeDocumentMoniker": "ucenje\\Program.cs",
               "ToolTip": "C:\\Users\\korda\\Documents\\GitHub\\UcenjeKuci\\ucenje\\ucenje\\Program.cs",
               "RelativeToolTip": "ucenje\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-26T14:08:26.468Z"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "WhenOpened": "2025-01-25T17:59:41.122Z",
+              "EditorCaption": ""
             }
           ]
         }
